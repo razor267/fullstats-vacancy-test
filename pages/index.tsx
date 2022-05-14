@@ -16,9 +16,11 @@ const Home: NextPage = () => {
                     <div className={styles.login}>Войти</div>
                 </div>
                 <div className={styles.content}>
-                    <div className={styles.bigText}>Start a <br/>new project with <span
-                        className={styles.blueText}>FullStats</span></div>
-                    <div className={styles.description}>Платформа для аналитики поможет вам в выборе товара или ниши, анализи конкурентов,  увеличении продаж и в ускорении оборачиваемости вашего товара</div>
+                    <div className={styles.bigText}>
+                        Start a <br/>
+                        new project with <span className={styles.blueText}>FullStats</span>
+                    </div>
+                    <div className={styles.description}>Платформа для аналитики поможет вам в выборе товара или ниши, анализа конкурентов,&nbsp; увеличении продаж и в ускорении оборачиваемости вашего товара</div>
                     <button className={styles.button}>Попробовать сейчас</button>
                 </div>
             </div>

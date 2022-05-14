@@ -1,106 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans&family=Roboto+Slab:wght@800&family=Roboto:wght@700&display=swap');
-
-/*
-font-family: 'Public Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif;
-*/
-
 $white: #fff;
 $blue: #3258FB;
 $black: #333;
 $gray: #919EAB;
 
 .backgroundLay {
-    height: 100vh;
-    background: $gray;
+  height: 100vh;
+  background: $gray;
+  display: grid;
+  align-items: center;
+  justify-items: end;
+
+  .bgImage {
+    position: relative;
+    top: -11px;
+    padding-right: 70px;
+  }
 }
 
 .wrapper {
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    background: radial-gradient(106.64% 115.35% at 4.1% 5.52%, rgba(22, 28, 36, 0.48) 0%, rgba(22, 28, 36, 0.8) 45.53%, #161C24 100%, #161C24 100%, #161C24 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-}
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: radial-gradient(106.64% 115.35% at 4.1% 5.52%, rgba(22, 28, 36, 0.48) 0%, rgba(22, 28, 36, 0.8) 45.53%, #161C24 100%, #161C24 100%, #161C24 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 
-.header {
+  .header {
     transform: matrix(-1, 0, 0, 1, 0, 0);
     color: $white;
     display: grid;
     grid-template-columns: repeat(2, max-content) auto;
     padding-top: 32px;
-}
 
-.logo {
-    padding-left: 150px;
-    padding-top: 1px;
-}
+    .logo {
+      padding-left: 150px;
+      padding-top: 1px;
+    }
 
-.title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    justify-self: start;
-    padding-left: 8px;
-}
+    .title {
+      font-family: 'Roboto', sans-serif;
+      font-size: 26px;
+      justify-self: start;
+      padding-left: 8px;
+    }
 
-.login {
-    font-family: 'Roboto', sans-serif;
-    justify-self: end;
-    font-size: 16px;
-    padding-right: 145px;
-    padding-top: 2px;
-}
+    .login {
+      font-family: 'Roboto', sans-serif;
+      justify-self: end;
+      font-size: 16px;
+      padding-right: 145px;
+      padding-top: 2px;
+    }
+  }
 
-.bgImage {
-    position: absolute;
-    right: 0;
-    padding-top: 204px;
-    padding-right: 70px;
-}
-
-.content {
+  .content {
     transform: matrix(-1, 0, 0, 1, 0, 0);
     display: grid;
     width: 466px;
     grid-template-rows: repeat(3, auto);
     gap: 40px;
     position: absolute;
-    top: 292px;
+    align-self: center;
     right: 144px;
-}
 
-.bigText {
-    font-family: 'Roboto', sans-serif;
-    font-size: 64px;
-    line-height: 80px;
-    color: $white;
-}
+    .bigText {
+      font-family: 'Roboto', sans-serif;
+      font-size: 64px;
+      line-height: 80px;
+      color: $white;
 
-.description {
-    font-family: 'Public Sans', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: $white;
-    width: 466px;
-    text-align: justify;
-}
+      .blueText {
+        color: $blue;
+        padding-left: 17px;
+      }
+    }
 
-.blueText {
-    color: $blue;
-    padding-left: 17px;
-}
+    .description {
+      position: relative;
+      top: 1px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: $white;
+      width: 466px;
+      text-align: start;
+    }
 
-.button {
-    font-family: 'Roboto', sans-serif;
-    height: 48px;
-    width: 191px;
-    background: $blue;
-    box-shadow: 0 8px 16px rgba(50, 88, 251, 0.24);
-    border-radius: 8px;
-    border: none;
-    color: $white;
-    font-size: 15px;
-    line-height: 26px;
+    .button {
+      font-family: 'Roboto', sans-serif;
+      height: 48px;
+      width: 191px;
+      background: $blue;
+      box-shadow: 0 8px 16px rgba(50, 88, 251, 0.24);
+      border-radius: 8px;
+      border: none;
+      color: $white;
+      font-size: 15px;
+      line-height: 26px;
+    }
+  }
 }
