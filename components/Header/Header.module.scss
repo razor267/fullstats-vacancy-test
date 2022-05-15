@@ -1,0 +1,33 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, max-content) auto;
+  padding-top: 32px;
+
+  .logo {
+    padding-left: 150px;
+    padding-top: 1px;
+  }
+
+  .title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    justify-self: start;
+    padding-left: 8px;
+  }
+
+  .login {
+    font-family: 'Roboto', sans-serif;
+    justify-self: end;
+    font-size: 16px;
+    padding-right: 145px;
+    padding-top: 2px;
+  }
+}
+
+.white {
+  color: var(--white);
+}
+
+.black {
+  color: var(--black);
+}

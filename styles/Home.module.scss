@@ -1,11 +1,6 @@
-$white: #fff;
-$blue: #3258FB;
-$black: #333;
-$gray: #919EAB;
-
 .backgroundLay {
   height: 100vh;
-  background: $gray;
+  background: var(--gray);
   display: grid;
   align-items: center;
   justify-items: end;
@@ -27,32 +22,8 @@ $gray: #919EAB;
 ;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 
-  .header {
+  .transform {
     transform: matrix(-1, 0, 0, 1, 0, 0);
-    color: $white;
-    display: grid;
-    grid-template-columns: repeat(2, max-content) auto;
-    padding-top: 32px;
-
-    .logo {
-      padding-left: 150px;
-      padding-top: 1px;
-    }
-
-    .title {
-      font-family: 'Roboto', sans-serif;
-      font-size: 26px;
-      justify-self: start;
-      padding-left: 8px;
-    }
-
-    .login {
-      font-family: 'Roboto', sans-serif;
-      justify-self: end;
-      font-size: 16px;
-      padding-right: 145px;
-      padding-top: 2px;
-    }
   }
 
   .content {
@@ -69,10 +40,10 @@ $gray: #919EAB;
       font-family: 'Roboto', sans-serif;
       font-size: 64px;
       line-height: 80px;
-      color: $white;
+      color: var(--white);
 
       .blueText {
-        color: $blue;
+        color: var(--blue);
         padding-left: 17px;
       }
     }
@@ -83,7 +54,7 @@ $gray: #919EAB;
       font-family: 'Open Sans', sans-serif;
       font-size: 16px;
       line-height: 24px;
-      color: $white;
+      color: var(--white);
       width: 466px;
       text-align: start;
     }
@@ -92,11 +63,11 @@ $gray: #919EAB;
       font-family: 'Roboto', sans-serif;
       height: 48px;
       width: 191px;
-      background: $blue;
+      background: var(--blue);
       box-shadow: 0 8px 16px rgba(50, 88, 251, 0.24);
       border-radius: 8px;
       border: none;
-      color: $white;
+      color: var(--white);
       font-size: 15px;
       line-height: 26px;
     }
