@@ -24,6 +24,11 @@
 
   .transform {
     transform: matrix(-1, 0, 0, 1, 0, 0);
+
+    .header {
+      color: var(--white);
+      padding: 32px 0 0 150px;
+    }
   }
 
   .content {

@@ -7,8 +7,11 @@ const Login: NextPage = () => {
     return (
         <>
             <div className={styles.loginWrapper}>
-                <div>
-                    <Header toggleTitle color='black'/>
+                <div className={styles.sidebar}>
+                    <div className={styles.wrapper}>
+                        <Header toggleTitle className={styles.headerSidebar}/>
+                        <img src="background_image_login.png" alt="bg_image" className={styles.bgImage}/>
+                    </div>
                 </div>
                 <div>content</div>
             </div>

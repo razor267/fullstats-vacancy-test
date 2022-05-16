@@ -12,7 +12,7 @@ const Home: NextPage = () => {
             </div>
             <div className={styles.wrapper}>
                 <div className={styles.transform}>
-                    <Header toggleLogin toggleTitle color='white'/>
+                    <Header toggleLogin toggleTitle className={styles.header}/>
                 </div>
                 <div className={styles.content}>
                     <div className={styles.bigText}>

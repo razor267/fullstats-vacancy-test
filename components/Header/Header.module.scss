@@ -1,10 +1,8 @@
 .header {
   display: grid;
   grid-template-columns: repeat(2, max-content) auto;
-  padding-top: 32px;
 
   .logo {
-    padding-left: 150px;
     padding-top: 1px;
   }
 
