@@ -35,3 +35,16 @@
 .black {
   color: var(--black);
 }
+
+@media (max-width: 768px) {
+  .header {
+    .logo {
+      padding: 32px 0 0 20px;
+      width: 60px;
+    }
+
+    .title {
+      display: none;
+    }
+  }
+}

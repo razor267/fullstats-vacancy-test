@@ -28,7 +28,7 @@ const Registration: NextPage = () => {
                             <Input type='text' placeholder='Email'/>
                             <Input type='password' placeholder='Пароль'/>
                             <div className={styles.button}>
-                                <Button label='Загеристрироваться'/>
+                                <Button label='Зарегистрироваться'/>
                             </div>
                             <div className={styles.footer}>
                                 <span>Регистрируясь, я соглашаюсь с минимальными условиями обслуживания и </span>

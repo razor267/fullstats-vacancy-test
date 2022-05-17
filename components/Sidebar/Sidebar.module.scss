@@ -19,3 +19,21 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+    .wrapper {
+      margin: 0;
+      height: max-content;
+      box-shadow: none;
+
+      .headerSidebar {
+        padding: 0;
+      }
+
+      .bgImage {
+        display: none;
+      }
+    }
+  }
+}
