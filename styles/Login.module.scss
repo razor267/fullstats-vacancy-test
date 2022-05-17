@@ -4,23 +4,127 @@
 
   .sidebar {
     display: grid;
+
+    .wrapper {
+      box-shadow: 0 16px 32px -4px rgba(145, 158, 171, 0.12);
+      border-radius: 16px;
+      margin: 16px 0 16px 16px;
+      height: calc(100vh - 32px);
+
+      .headerSidebar {
+        color: var(--black);
+        padding: 39px 0 0 40px;
+      }
+
+      .bgImage {
+        width: 364px;
+        position: absolute;
+        top: calc(50% - 136.5px);
+      }
+    }
   }
 
-  .wrapper {
-    box-shadow: 0 16px 32px -4px rgba(145, 158, 171, 0.12);
-    border-radius: 16px;
-    margin: 16px 0 16px 16px;
-    height: calc(100vh - 32px);
+  .contentWrapper {
+    display: grid;
+    grid-template-rows: max-content auto;
 
-    .headerSidebar {
-      color: var(--black);
-      padding: 39px 0 0 40px;
+    .account {
+      justify-self: end;
+      padding: 41px 41px 0 0;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      line-height: 22px;
+
+      .reg {
+        font-weight: 600;
+        color: var(--blue);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .formWrapper {
+    display: grid;
+    height: max-content;
+    gap: 40px;
+    justify-self: center;
+    align-self: center;
+    margin-left: 80px;
+    width: 480px;
+    position: relative;
+    top: -44px;
+    font-family: 'Roboto', sans-serif;
+
+    .login {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      padding-bottom: 8px;
     }
 
-    .bgImage {
-      width: 364px;
-      position: absolute;
-      top: calc(50% - 136.5px);
+    .yourData {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .form {
+    display: grid;
+    gap: 6px;
+
+    .example {
+      display: grid;
+      grid-template-columns: max-content auto;
+      height: 50px;
+      background: rgba(50, 88, 251, 0.2);
+      border-radius: 8px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      line-height: 22px;
+      align-items: center;
+
+      .info {
+        padding: 0 14px 0 18px;
+      }
+
+      .bold {
+        font-weight: 600;
+      }
+    }
+
+    .password {
+      padding-top: 18px;
+    }
+
+    .rememberWrapper {
+      display: grid;
+      grid-template-columns: max-content max-content auto;
+      padding-top: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      line-height: 22px;
+      align-items: start;
+
+      .rememberIcon {
+        padding-left: 11px;
+        cursor: pointer;
+      }
+
+      .rememberMe {
+        padding-left: 11px;
+      }
+
+      .recoveryPassword {
+        justify-self: end;
+        font-weight: 700;
+        color: var(--blue);
+        cursor: pointer;
+      }
+    }
+
+    .button {
+      padding-top: 17px;
     }
   }
 }
