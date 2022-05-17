@@ -1,0 +1,88 @@
+.registrationWrapper {
+  display: grid;
+  grid-template-columns: 380px auto;
+
+  .contentWrapper {
+    display: grid;
+    grid-template-rows: max-content auto;
+
+    .loginLink {
+      justify-self: end;
+      padding: 41px 41px 0 0;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      line-height: 22px;
+
+      .login {
+        color: var(--blue);
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .formWrapper {
+    display: grid;
+    grid-template-rows: max-content auto;
+    gap: 40px;
+    position: absolute;
+    left: calc(100vw/2 - 10px);
+    align-self: center;
+    width: 480px;
+    height: 461px;
+
+    .header {
+      display: grid;
+      grid-template-rows: max-content auto;
+      gap: 8px;
+      font-family: 'Roboto', sans-serif;
+
+      .reg {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+      .regDescription {
+        font-size: 16px;
+      }
+    }
+
+    .form {
+      display: grid;
+      gap: 24px;
+      height: max-content;
+
+      .name {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 16px;
+      }
+
+      .button {
+        position: relative;
+        top: -15px;
+      }
+
+      .footer {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: var(--gray);
+        position: relative;
+        top: -14px;
+
+        .privacy {
+          color: var(--blue);
+          text-decoration: underline;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,28 +2,6 @@
   display: grid;
   grid-template-columns: 380px auto;
 
-  .sidebar {
-    display: grid;
-
-    .wrapper {
-      box-shadow: 0 16px 32px -4px rgba(145, 158, 171, 0.12);
-      border-radius: 16px;
-      margin: 16px 0 16px 16px;
-      height: calc(100vh - 32px);
-
-      .headerSidebar {
-        color: var(--black);
-        padding: 39px 0 0 40px;
-      }
-
-      .bgImage {
-        width: 364px;
-        position: absolute;
-        top: calc(50% - 136.5px);
-      }
-    }
-  }
-
   .contentWrapper {
     display: grid;
     grid-template-rows: max-content auto;

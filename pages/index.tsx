@@ -3,6 +3,7 @@ import React from 'react'
 
 import styles from '../styles/Home.module.scss'
 import Header from '../components/Header'
+import Button from '../components/Button'
 
 const Home: NextPage = () => {
     return (
@@ -20,7 +21,10 @@ const Home: NextPage = () => {
                         new project with <span className={styles.blueText}>FullStats</span>
                     </div>
                     <div className={styles.description}>Платформа для аналитики поможет вам в выборе товара или ниши, анализа конкурентов,&nbsp; увеличении продаж и в ускорении оборачиваемости вашего товара</div>
-                    <button className={styles.button}>Попробовать сейчас</button>
+                    {/*<button className={styles.button}>Попробовать сейчас</button>*/}
+                    <div className={styles.button}>
+                        <Button label='Попробовать сейчас'/>
+                    </div>
                 </div>
             </div>
         </>
