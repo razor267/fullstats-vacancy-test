@@ -20,6 +20,18 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .sidebar {
+    width: 280px;
+
+    .wrapper {
+      .bgImage {
+        width: 264px;
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .sidebar {
     .wrapper {

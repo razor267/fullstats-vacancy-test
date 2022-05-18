@@ -106,3 +106,54 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .loginWrapper {
+    grid-template-columns: 280px auto;
+    .formWrapper {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .loginWrapper {
+    grid-template-columns: auto;
+
+    .contentWrapper {
+      grid-template-areas: "formWrapper" "account";
+
+      .account {
+        justify-self: center;
+        padding: 83px 0 0 0;
+        grid-area: account;
+
+        .reg {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .formWrapper {
+      height: max-content;
+      width: 335px;
+      margin: 0;
+      top: 58px;
+      grid-area: formWrapper;
+
+      .login {
+        line-height: 30px;
+      }
+    }
+
+    .form {
+      .example {
+        height: 70px;
+
+        .bold {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

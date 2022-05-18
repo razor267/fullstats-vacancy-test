@@ -18,8 +18,7 @@
   width: 100%;
   position: absolute;
   top: 0;
-  background: radial-gradient(106.64% 115.35% at 4.1% 5.52%, rgba(22, 28, 36, 0.48) 0%, rgba(22, 28, 36, 0.8) 45.53%, #161C24 100%, #161C24 100%, #161C24 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-;
+  background: radial-gradient(106.64% 115.35% at 4.1% 5.52%, rgba(22, 28, 36, 0.48) 0%, rgba(22, 28, 36, 0.8) 45.53%, #161C24 100%, #161C24 100%, #161C24 100%);
   transform: matrix(-1, 0, 0, 1, 0, 0);
 
   .transform {
@@ -28,6 +27,33 @@
     .header {
       color: var(--white);
       padding: 32px 0 0 150px;
+      display: grid;
+      grid-template-columns: repeat(2, max-content) auto;
+
+      .logo {
+        padding-top: 1px;
+        cursor: pointer;
+      }
+
+      .title {
+        position: relative;
+        top: -1px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        font-size: 26px;
+        justify-self: start;
+        padding-left: 8px;
+        cursor: pointer;
+      }
+
+      .login {
+        font-family: 'Roboto', sans-serif;
+        justify-self: end;
+        font-size: 16px;
+        padding-right: 145px;
+        padding-top: 2px;
+        cursor: pointer;
+      }
     }
   }
 
@@ -67,6 +93,77 @@
 
     .button {
       width: 191px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .backgroundLay {
+    .bgImage {
+      top: -18px;
+      right: -2px;
+      padding: 0;
+      width: 246px;
+      justify-self: center;
+    }
+  }
+
+  .wrapper {
+    .transform {
+      .header {
+        padding: 32px 0 0 20px;
+
+        .logo {
+          position: relative;
+          width: 20px;
+          top: -1px;
+        }
+
+        .title {
+          position: relative;
+          top: 0;
+          font-size: 16px;
+          line-height: 19px;
+        }
+
+        .login {
+          position: relative;
+          font-size: 14px;
+          top: 2px;
+          padding-right: 20px;
+        }
+      }
+    }
+
+    .content {
+      display: grid;
+      width: 343px;
+      right: auto;
+      align-self: center;
+      justify-self: center;
+      justify-items: center;
+
+      .bigText {
+        width: 343px;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+
+        .blueText {
+          padding-left: 0;
+        }
+      }
+
+      .description {
+        position: relative;
+        width: 343px;
+        top: -1px;
+        text-align: center;
+      }
+
+      .button {
+        width: 191px;
+      }
     }
   }
 }

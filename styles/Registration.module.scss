@@ -87,6 +87,18 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .registrationWrapper {
+    grid-template-columns: 280px auto;
+    .contentWrapper {
+      .formWrapper {
+        left: auto;
+        justify-self: center;
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .registrationWrapper {
     grid-template-columns: auto;
@@ -95,11 +107,15 @@
       grid-template-areas: "formWrapper" "loginLink";
 
       .loginLink {
-        padding-top: 210px;
-        padding-right: 7px;
+        padding-top: 209px;
+        padding-right: 4px;
         justify-self: center;
         grid-area: loginLink;
-        letter-spacing: 0.01em;
+
+        .login {
+          font-family: 'Public Sans', sans-serif;
+          font-weight: 700;
+        }
       }
 
       .formWrapper {

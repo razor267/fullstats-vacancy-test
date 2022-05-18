@@ -12,7 +12,7 @@ const Registration: NextPage = () => {
                 <Sidebar img='background_image_registration.png'/>
                 <div className={styles.contentWrapper}>
                     <div className={styles.loginLink}>
-                        <span>Уже есть аккаунт? </span>
+                        <span>Уже есть аккаунт ? </span>
                         <span className={styles.login}>Войти</span>
                     </div>
                     <div className={styles.formWrapper}>

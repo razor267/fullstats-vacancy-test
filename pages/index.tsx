@@ -2,10 +2,10 @@ import type {NextPage} from 'next'
 import React from 'react'
 
 import styles from '../styles/Home.module.scss'
-import Header from '../components/Header'
 import Button from '../components/Button'
 
 const Home: NextPage = () => {
+
     return (
         <>
             <div className={styles.backgroundLay}>
@@ -13,15 +13,18 @@ const Home: NextPage = () => {
             </div>
             <div className={styles.wrapper}>
                 <div className={styles.transform}>
-                    <Header toggleLogin toggleTitle className={styles.header}/>
+                    <div className={styles.header}>
+                        <img src='logo.svg' alt="logo" className={styles.logo}/>
+                        <div className={styles.title}>FullStats</div>
+                        <div className={styles.login}>Войти</div>
+                    </div>
                 </div>
                 <div className={styles.content}>
                     <div className={styles.bigText}>
-                        Start a <br/>
-                        new project with <span className={styles.blueText}>FullStats</span>
+                        Start a&nbsp;<br/>
+                        new project <br/> with <span className={styles.blueText}>FullStats</span>
                     </div>
                     <div className={styles.description}>Платформа для аналитики поможет вам в выборе товара или ниши, анализа конкурентов,&nbsp; увеличении продаж и в ускорении оборачиваемости вашего товара</div>
-                    {/*<button className={styles.button}>Попробовать сейчас</button>*/}
                     <div className={styles.button}>
                         <Button label='Попробовать сейчас'/>
                     </div>
