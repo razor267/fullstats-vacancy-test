@@ -1,6 +1,7 @@
 import React, {FC} from 'react'
 import styles from './Sidebar.module.scss'
 import Header from '../Header'
+import * as S from './styles'
 
 type PropsType = {
     img?: string
@@ -13,6 +14,14 @@ const Sidebar: FC<PropsType> = ({img}) => {
                 <img src={img} alt="bg_image" className={styles.bgImage}/>
             </div>
         </div>
+        /*<S.Sidebar>
+            <S.Wrapper>
+                <S.HeaderSidebar>
+                    <Header toggleTitle/>
+                </S.HeaderSidebar>
+                <S.BgImage src={img}/>
+            </S.Wrapper>
+        </S.Sidebar>*/
     )
 }
 
