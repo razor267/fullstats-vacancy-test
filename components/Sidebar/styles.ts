@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   height: calc(100vh - 32px);
 `
 
-export const BgImage = styled.img<{src?: string}>`
+export const BgImage = styled.img`
   width: 364px;
   position: absolute;
   top: calc(50% - 137px);
