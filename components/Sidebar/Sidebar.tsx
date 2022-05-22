@@ -16,9 +16,7 @@ const Sidebar: FC<PropsType> = ({img}) => {
         // </div>
         <S.Sidebar>
             <S.Wrapper>
-                <S.HeaderSidebar>
-                    <Header toggleTitle/>
-                </S.HeaderSidebar>
+                <Header toggleTitle sidebar/>
                 <S.BgImage src={img} alt='bgImage'/>
             </S.Wrapper>
         </S.Sidebar>

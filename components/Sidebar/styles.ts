@@ -16,8 +16,3 @@ export const BgImage = styled.img`
   position: absolute;
   top: calc(50% - 137px);
 `
-
-export const HeaderSidebar = styled.div`
-  color: var(--black);
-  padding: 39px 0 0 40px;
-`
