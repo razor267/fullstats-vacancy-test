@@ -14,6 +14,11 @@ export const FormStyled = styled.div`
   width: 480px;
   gap: 28px;
   height: 360px;
+  @media ${props => props.theme.media.weight768px} {
+    width: 335px;
+    top: 214px;
+    gap: 40px;
+  }
 `
 
 export const Text = styled.div`
@@ -27,6 +32,10 @@ export const HeaderText = styled.div`
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
+  @media ${props => props.theme.media.weight768px} {
+    font-size: 24px;
+    line-height: 36px;
+  }
 `
 
 export const Description = styled.div`

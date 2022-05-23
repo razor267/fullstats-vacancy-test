@@ -10,12 +10,19 @@ export const Header = styled.div<{sidebar?: boolean, passwordPage?: boolean}>`
   `}
     ${ props => props.passwordPage && css `
     padding: 40px 0 0 40px;
+    @media ${props => props.theme.media.weight768px} {
+      padding: 0;
+    }
   `}
 `
 
 export const LogoHeader = styled.img`
   padding-top: 1px;
   cursor: pointer;
+  @media ${props => props.theme.media.weight768px} {
+    padding: 32px 0 0 20px;
+    width: 60px;
+  }
 `
 
 export const TitleHeader = styled.div`
@@ -27,6 +34,9 @@ export const TitleHeader = styled.div`
   justify-self: start;
   padding-left: 8px;
   cursor: pointer;
+  @media ${props => props.theme.media.weight768px} {
+    display: none;
+  }
 `
 
 export const LoginHeader = styled.div`
