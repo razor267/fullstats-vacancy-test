@@ -68,7 +68,7 @@ body {
 export const theme = {
     media: {
         weight768px: '(max-width: 768px)',
-        weight1000px: '(max-width: 1000px) and (max-width: 768px)'
+        weight1000px: '(max-width: 1000px) and (min-width: 768px)'
     }
 }
 

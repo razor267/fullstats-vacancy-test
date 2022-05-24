@@ -3,12 +3,13 @@ import React from 'react'
 
 import styles from '../styles/Home.module.scss'
 import Button from '../components/Button'
+import * as I from '../styles/indexStyles'
 
 const Home: NextPage = () => {
 
     return (
         <>
-            <div className={styles.backgroundLay}>
+            {/*<div className={styles.backgroundLay}>
                 <img src="background_image_home.png" alt="bg_image" className={styles.bgImage}/>
             </div>
             <div className={styles.wrapper}>
@@ -29,7 +30,31 @@ const Home: NextPage = () => {
                         <Button label='Попробовать сейчас'/>
                     </div>
                 </div>
-            </div>
+            </div>*/}
+
+            <I.BackgroundLay>
+                <I.BgImage src="background_image_home.png" alt="bg_image"/>
+            </I.BackgroundLay>
+            <I.Wrapper>
+                <I.Transform>
+                    <I.Header>
+                        <I.Logo src='logo.svg' alt="logo"/>
+                        <I.Title>FullStats</I.Title>
+                        <I.Login>Войти</I.Login>
+                    </I.Header>
+                </I.Transform>
+                <I.Content>
+                    <I.BigText>
+                        Start a&nbsp;<br/>
+                        new project <br/> with <I.BlueText>FullStats</I.BlueText>
+                    </I.BigText>
+                    <I.Description>Платформа для аналитики поможет вам в выборе товара или ниши, анализа
+                        конкурентов,&nbsp; увеличении продаж и в ускорении оборачиваемости вашего товара</I.Description>
+                    <I.Button>
+                        <Button label='Попробовать сейчас'/>
+                    </I.Button>
+                </I.Content>
+            </I.Wrapper>
         </>
     )
 }

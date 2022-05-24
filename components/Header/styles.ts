@@ -7,6 +7,9 @@ export const Header = styled.div<{sidebar?: boolean, passwordPage?: boolean}>`
   ${ props => props.sidebar && css `
     color: var(--black);
     padding: 39px 0 0 40px;
+    @media ${props => props.theme.media.weight768px} {
+      padding: 0;
+    }
   `}
     ${ props => props.passwordPage && css `
     padding: 40px 0 0 40px;
