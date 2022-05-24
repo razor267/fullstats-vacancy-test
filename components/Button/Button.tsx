@@ -1,5 +1,4 @@
 import React, {FC} from 'react'
-import styles from './Button.module.scss'
 import * as B from './styles'
 
 type PropsType = {
@@ -7,10 +6,6 @@ type PropsType = {
 }
 const Button: FC<PropsType> = ({label}) => {
     return (
-        /*<button className={styles.button}>
-            <div className={styles.buttonText}>{label}</div>
-        </button>*/
-
         <B.ButtonStyled>
             <B.ButtonText>{label}</B.ButtonText>
         </B.ButtonStyled>
