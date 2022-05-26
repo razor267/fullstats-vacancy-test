@@ -4,8 +4,19 @@ import Input from '../components/Input'
 import Button from '../components/Button'
 import Sidebar from '../components/Sidebar'
 import * as L from '../styles/loginStyles'
+import { useLoginMutation } from '../redux/api'
 
 const Login: NextPage = () => {
+
+    const [login] = useLoginMutation()
+
+    const handleLogin = async () => {
+        await login({
+            "email": "demoFS267@example.com",
+            "password": "demoFS267_password"
+        })
+    }
+
     return (
     <L.LoginWrapper>
         <Sidebar img="background_image_login.png"/>
@@ -35,7 +46,7 @@ const Login: NextPage = () => {
                         <L.RememberMe>Запомнить меня</L.RememberMe>
                         <L.RecoveryPassword>Забыли пароль?</L.RecoveryPassword>
                     </L.RememberWrapper>
-                    <L.Button>
+                    <L.Button onClick={handleLogin}>
                         <Button label='Войти'/>
                     </L.Button>
                 </L.Form>

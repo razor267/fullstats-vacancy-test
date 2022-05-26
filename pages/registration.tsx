@@ -4,8 +4,20 @@ import Sidebar from '../components/Sidebar'
 import Input from '../components/Input'
 import Button from '../components/Button'
 import * as R from '../styles/registrationStyles'
+import {useRegistrationMutation} from '../redux/api'
 
 const Registration: NextPage = () => {
+
+    const [registration] = useRegistrationMutation()
+
+    const handleRegistration = async () => {
+        await registration({
+            "username": "demoFS267",
+            "email": "demoFS267@example.com",
+            "password": "demoFS267_password"
+        })
+    }
+
     return (
         <>
             <R.RegistrationWrapper>
@@ -27,7 +39,7 @@ const Registration: NextPage = () => {
                             </R.Name>
                             <Input type='text' placeholder='Email'/>
                             <Input type='password' placeholder='Пароль'/>
-                            <R.Button>
+                            <R.Button onClick={handleRegistration}>
                                 <Button label='Зарегистрироваться'/>
                             </R.Button>
                             <R.Footer>
