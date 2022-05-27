@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# fullstats-vacancy-test
 
-## Getting Started
+Проект был разработан как тестовое задание от HR-менеджера.
 
-First, run the development server:
+## Задание на разработку
 
+Сверстать главную страницу, страницы авторизации и регистрации. При
+регистрации автоматически авторизировать пользователя и направлять на главную
+страницу. Сохранять токены access и refresh в cookies или в local storage. При
+истечении срока действия access токена обновлять его. Страницы верстать согласно
+макету.
+
+**Стек технологий**
+- React
+- Redux (Redux Toolkit, RTK Query)
+- Styled Components
+- Git
+- Желательно Next
+
+## Результат
+
+**Проект в разработке**
+
+Сторонние библиотеки, используемые в проекте:
+  - **Styled Components** (CSS in JS)
+  - **redux-toolkit** (отвечает за стейтменеджемент)
+
+# Start
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/password.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<div align="right">
+  <a href="https://reactjs.org/">
+    <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
+  </a>
+  <a href="https://redux.js.org/">
+    <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="Redux" alt="Redux " width="40" height="40"/>&nbsp;
+  </a>
+   <a href="https://www.typescriptlang.org/">    
+    <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-plain.svg" title="TypeScript" alt="TypeScript" width="40" height="40"/>&nbsp;
+  </a>
+  <a href="https://nextjs.org/">    
+     <img src="https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original-wordmark.svg" title="NextJS" alt="NextJS" width="40" height="40"/>&nbsp;
+  </a>
+</div>
