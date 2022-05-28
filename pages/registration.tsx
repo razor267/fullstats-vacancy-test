@@ -4,11 +4,12 @@ import Sidebar from '../components/Sidebar'
 import Input from '../components/Input'
 import Button from '../components/Button'
 import * as R from '../styles/registrationStyles'
-import {useRegistrationMutation} from '../redux/api'
+import {useGetUsernameMutation, useRegistrationMutation} from '../redux/api'
 
 const Registration: NextPage = () => {
 
     const [registration] = useRegistrationMutation()
+    const [getUsername] = useGetUsernameMutation()
 
     const handleRegistration = async () => {
         await registration({
@@ -16,6 +17,11 @@ const Registration: NextPage = () => {
             "email": "demoFS267@example.com",
             "password": "demoFS267_password"
         })
+      /*  await getUsername({
+            "username": "demoFS267",
+            "email": "demoFS267@example.com",
+            "password": "demoFS267_password"
+        })*/
     }
 
     return (

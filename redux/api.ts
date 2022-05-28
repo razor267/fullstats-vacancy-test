@@ -18,7 +18,14 @@ export const Api = createApi({
                 body
             })
         }),
+        getUsername: build.mutation({
+            query: body => ({
+                url: 'token-refresh/',
+                method: 'POST',
+                body
+            })
+        }),
     })
 })
 
-export const {useLoginMutation, useRegistrationMutation} = Api
+export const {useLoginMutation, useRegistrationMutation, useGetUsernameMutation} = Api
