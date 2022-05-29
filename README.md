@@ -19,7 +19,7 @@
 
 ## Результат
 
-**Проект в разработке**
+Полностью свёрстан макет(pixel perfect). Макет адаптируются под любые разрешения экрана. Регистрация и логинизация так же работают. Валидация форм и обновление токена не реализованы по причине того что вакансия была закрыта и были внесены изменения в API.
 
 Сторонние библиотеки, используемые в проекте:
   - **Styled Components** (CSS in JS)
@@ -29,6 +29,9 @@
 ```bash
 npm run dev
 ```
+
+# Interface
+<p align="center"><img src="https://i.ibb.co/0rFZp1D/preview-project.gif" alt="ReviewProject" border="0"></p>
 
 <div align="right">
   <a href="https://reactjs.org/">
