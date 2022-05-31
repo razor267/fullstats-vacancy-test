@@ -31,7 +31,7 @@ npm run dev
 ```
 
 # Interface
-<p align="center"><img src="https://i.ibb.co/0rFZp1D/preview-project.gif" alt="ReviewProject" border="0"></p>
+<p align="center"><img src="https://i.ibb.co/ZLqD9bc/preview-project.gif" alt="ReviewProject" border="0"></p>
 
 <div align="right">
   <a href="https://reactjs.org/">
